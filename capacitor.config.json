@@ -1,0 +1,10 @@
+{
+  "appId": "com.example.nodejs.app",
+  "appName": "CapacitorNodeJS-App",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}
