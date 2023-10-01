@@ -1,0 +1,8 @@
+{
+  "name": "capacitor-nodejs-project",
+  "version": "1.0.0",
+  "main": "./server.js",
+  "dependencies": {
+    "hello-world-npm": "^1.1.1"
+  }
+}

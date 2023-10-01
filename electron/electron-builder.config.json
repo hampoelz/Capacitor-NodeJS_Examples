@@ -1,5 +1,6 @@
 {
   "appId": "com.example.nodejs.app",
+  "includeSubNodeModules": true,
   "directories": {
     "buildResources": "resources"
   },

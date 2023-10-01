@@ -10,7 +10,8 @@
   "scripts": {
     "build": "vite build",
     "build:android": "npm run build && npx cap sync android && cd android && ./gradlew build",
-    "build:electron": "npm run build && npx cap sync @capacitor-community/electron && cd electron && npm run electron:make"
+    "build:electron": "npm run build && npx cap sync @capacitor-community/electron && cd electron && npm run electron:make",
+    "postinstall": "cd static/nodejs/ && npm install"
   },
   "dependencies": {
     "@capacitor-community/electron": "^5.0.1",
