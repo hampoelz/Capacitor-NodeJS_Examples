@@ -1,0 +1,17 @@
+{
+  "appId": "com.example.nodejs.app",
+  "directories": {
+    "buildResources": "resources"
+  },
+  "files": ["assets/**/*", "build/**/*", "capacitor.config.*", "app/**/*"],
+  "win": {
+    "target": "portable",
+    "icon": "assets/appIcon.ico"
+  },
+  "mac": {
+    "target": "dmg"
+  },
+  "linux": {
+    "target": "AppImage"
+  }
+}
