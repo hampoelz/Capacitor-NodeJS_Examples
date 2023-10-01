@@ -14,11 +14,17 @@ NodeJS.addListener('msg-from-nodejs', event => {
   console.log(event);
 });
 
-// Waits for the Node.js process to initialize.
-NodeJS.whenReady().then(() => {
-  // Sends a message to the Node.js process.
-  NodeJS.send({
-    eventName: 'msg-from-capacitor',
-    args: ['Hello from Capacitor!'],
+// Waits 5 minutes before continuing.
+setTimeout(() => {
+  // Starts the Node.js engine.
+  NodeJS.start();
+
+  // Waits for the Node.js process to initialize.
+  NodeJS.whenReady().then(() => {
+    // Sends a message to the Node.js process.
+    NodeJS.send({
+      eventName: 'msg-from-capacitor',
+      args: ['Hello from Capacitor!'],
+    });
   });
-});
+}, 5000);
