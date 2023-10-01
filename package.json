@@ -8,11 +8,13 @@
     "mobile"
   ],
   "scripts": {
-    "build": "vite build"
+    "build": "vite build",
+    "build:android": "npm run build && npx cap sync android && cd android && ./gradlew build"
   },
   "dependencies": {
-    "@capacitor/core": "latest",
+    "@capacitor/android": "^5.4.1",
     "@capacitor/camera": "latest",
+    "@capacitor/core": "latest",
     "@capacitor/splash-screen": "latest"
   },
   "devDependencies": {
