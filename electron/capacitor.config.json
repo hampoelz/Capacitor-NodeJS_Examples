@@ -5,6 +5,9 @@
   "plugins": {
     "SplashScreen": {
       "launchShowDuration": 0
+    },
+    "CapacitorNodeJS": {
+      "nodeDir": "nodejs"
     }
   }
 }
